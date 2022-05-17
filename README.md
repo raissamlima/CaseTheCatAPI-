@@ -40,8 +40,8 @@ Criei para testar a classe "ApiApplicationTests" com o seguinte código:
 	}
 
 
-Em "consumerAPICategories" é retornado a lista de todos os nomes dos gatos disponíveis na url https://api.thecatapi.com/v1/categories;
+Em "consumerAPICategories" é retornado a lista de todos os nomes dos gatos disponíveis na url: https://api.thecatapi.com/v1/categories
 
-No segundo teste "consumerAPIImagens" é retornado a url da imagem encontrada em https://api.thecatapi.com/v1/images/search;
+No segundo teste "consumerAPIImagens" é retornado a url da imagem encontrada em: https://api.thecatapi.com/v1/images/search
 
 Para cada teste, foi criado a sua classe "TheCatCategories" e "TheCatImages" passando os parâmetros de cada url. 
