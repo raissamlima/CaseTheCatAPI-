@@ -106,7 +106,7 @@ Em seguida, realizei a segunda etapa de listar as informações de uma raça, a 
 		return response.getBody();
 	}
 	
-No postman realizei a requisição GET onde foi retornado todas as informações do tigre de bengala: 
+No postman realizei a requisição GET onde foi retornado todas as informações do gato de bengala: 
 
 ![image](https://user-images.githubusercontent.com/86810509/168924341-05c3fe02-d370-435e-a8e6-33f4e4cb3ea4.png)
 
