@@ -30,7 +30,7 @@ Criei para testar a classe "ApiApplicationTests" com o seguinte código:
 	}
 	
 	@Test
-	public void consumerAPIImagens() {
+	public void consumerAPIImages() {
 			
 		ResponseEntity<TheCatImages[]> entity = new RestTemplate().getForEntity("https://api.thecatapi.com/v1/images/search", TheCatImages[].class);
 		
