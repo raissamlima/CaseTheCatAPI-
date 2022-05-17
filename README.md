@@ -6,7 +6,7 @@ Visite o site: https://start.spring.io/ e crie um projeto Java, lá você pode e
 
 ![image](https://user-images.githubusercontent.com/86810509/168702835-19d389c7-68ee-4e97-ada0-f29824290db0.png)
 
-Após descompactar o projeto criado no inicializador do Spring Boot, criei a pasta "com.cat.api.controller" e a classe "ApiApplicationController.java" onde foi mapeado as requests das APIS de "Categories" e "Images". 
+Após descompactar o projeto criado no inicializador do Spring Boot importei o arquivo para a IDE de minha preferência (eclipse), criei a pasta "com.cat.api.controller" e a classe "ApiApplicationController.java" onde foi mapeado as requests das APIS de "Categories" e "Images". 
 A solicitação foi feita por meio GET (que faz a leitura de dados no host), usei o Postman que é um aplicativo com a função de testar e desenvolver APIs em uma interface bastante simples. Ele me permitiu simular a requisição HTTP de forma rápida, onde foi retornado o status 200, que significa o sucesso da requisição.
 
 No postman então foi criado uma biblioteca "CaseTheCatApi" com todas as requisições feitas e o body retornado. 
