@@ -1,5 +1,15 @@
 # CaseTheCatAPI-
 
+As informações desse projeto para a construção e implementação das APIs estão sendo coletadas em: https://thecatapi.com/
+Projeto realizado na linguagem: Java
+IDE utilizada: Eclipse
+Framework: Spring Boot
+
+Para rodar essa aplicação bastar clonar esse repositório e importar na IDE de sua preferência.
+
+_____________________________________
+
+
 Desenho Arquitetural Informando como a solução irá funcionar: 
 
 ![image](https://user-images.githubusercontent.com/86810509/168922464-cc201262-7ef8-4dfb-8e5d-d3418e5999a9.png)
