@@ -11,6 +11,12 @@ A solicitação foi feita por meio GET (que faz a leitura de dados no host), use
 
 No postman então foi criado uma biblioteca "CaseTheCatApi" com todas as requisições feitas e o body retornado. 
 
+![image](https://user-images.githubusercontent.com/86810509/168703488-87256fe0-1312-41a9-9c58-1cf3cb00c9b9.png)
+
+![image](https://user-images.githubusercontent.com/86810509/168703724-71862764-aa72-4020-bd05-bf07ee60516e.png)
+
+
+
 Criei para testar a classe "ApiApplicationTests" com o seguinte código:
 	
 	@Test
