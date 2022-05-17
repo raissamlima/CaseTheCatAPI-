@@ -8,6 +8,17 @@ public class TheCatImages {
 	private int width;
 	private int height;
 	
+	public TheCatImages(){
+	}
+	
+	public TheCatImages(String id, String breads, String url, int width, int height){
+		this.id = id;
+		this.breads = breads;
+		this.url = url;
+		this.width = width;
+		this.height = height;
+	}
+	
 	public String getId() {
 		return id;
 	}

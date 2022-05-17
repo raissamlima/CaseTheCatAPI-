@@ -5,6 +5,14 @@ public class TheCatCategories {
 	private int id;
 	private String name;
 	
+	public TheCatCategories(){		
+	}
+	
+	public TheCatCategories(int id, String name){
+		this.id = id;
+		this.name = name;
+	}
+	
 	public int getId() {
 		return id;
 	}

@@ -26,8 +26,8 @@ public class ApiApplicationTests {
 			
 		ResponseEntity<TheCatImages[]> entity = new RestTemplate().getForEntity("https://api.thecatapi.com/v1/images/search", TheCatImages[].class);
 		
-		for (TheCatImages cat: entity.getBody()){
-			System.out.println(cat.getUrl());
+		for (TheCatImages img: entity.getBody()){
+			System.out.println(img.getUrl());
 		}	
 	}
 }
