@@ -45,3 +45,8 @@ Em "consumerAPICategories" é retornado a lista de todos os nomes dos gatos disp
 No segundo teste "consumerAPIImagens" é retornado a url da imagem encontrada em: https://api.thecatapi.com/v1/images/search
 
 Para cada teste, foi criado a sua classe "TheCatCategories" e "TheCatImages" passando os parâmetros de cada url. 
+
+Observação: Outra melhoria importante de se falar foi a implementação da dependência DevTools no pom.xml, com ela não preciso mais reiniciar o servidor a cada modificação feita no código, na hora que for salva qualquer alteração o Spring já reinicia sozinho. Outro detalhe é que o escopo dessa dependência será runtime, ou seja, ele só vai rodar durante a execução do projeto. 
+
+![image](https://user-images.githubusercontent.com/86810509/168868777-5e1e27a0-c197-4188-95e8-b0c2fddccb37.png)
+
