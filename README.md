@@ -125,7 +125,7 @@ No postman realizei a requisição GET onde foi retornado todas as informações
 
 _____________________________________________________________________________________
 
-Seguindo mais adiante, a ideia é que comecemos a armazenar as informações em uma base de dados. A tentativa aqui é voltar a usar o Docker, depois de algum tempo sem trabalhar diretamente com banco de dados nas aplicações, comecei pela instalação na minha máquina pessoal, onde lá você pode encontrar a opção ideal para sua máquina (mac, windows ou linux). 
+Seguindo mais adiante, a ideia é começar a armazenar as informações em uma base de dados. A tentativa aqui é voltar a usar o Docker, depois de algum tempo sem trabalhar diretamente com banco de dados nas aplicações, comecei pela instalação na minha máquina pessoal, onde lá você pode encontrar a opção ideal para sua máquina (mac, windows ou linux). 
 
 É importante se atentar que se sua máquina for *Windows 10* assim como a minha você precisará abrir o Windows PowerShell como Administrador e realizador os seguintes comandos antes:
 
