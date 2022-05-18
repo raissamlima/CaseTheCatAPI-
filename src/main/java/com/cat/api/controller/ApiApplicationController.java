@@ -61,15 +61,15 @@ public class ApiApplicationController {
 		return response.getBody();
 	}
 	
-	// api-breeds - Listando as informações de uma raça - Gato de Bengala
-
-	@RequestMapping("/api-breeds")
+	//api-breeds - a) API capaz de listar todas as raças
+	
+	@RequestMapping("/api-breeds01")
 	public String api3() {
-		return "Api de Breeds - Gato de Bengala";
+		return "Api de Breeds - Todas as Raças";
 	}
 
-	@GetMapping(value = "/Bengal")
-	public String getApiBengal() {
+	@GetMapping(value = "/breeds_selection")
+	public String getApiBreeds() {
 		String uri = "http://localhost:8082/api-breeds";
 		RestTemplate restTemplate = new RestTemplate();
 		String result = restTemplate.getForObject(uri, String.class);
@@ -78,6 +78,29 @@ public class ApiApplicationController {
 
 	@GetMapping(value = "/breeds")
 	public Object[] getBreeds() {
+		String url = "https://api.thecatapi.com/v1/breeds";
+		ResponseEntity<Object[]> response = new RestTemplate().getForEntity(url, Object[].class);
+
+		return response.getBody();
+	}
+	
+	// api-breeds - b) API capaz de listar as informações de uma raça
+
+	@RequestMapping("/api-breeds02")
+	public String api4() {
+		return "Api de Breeds - Gato de Bengala";
+	}
+
+	@GetMapping(value = "/bengal_selection")
+	public String getApiBengal() {
+		String uri = "http://localhost:8082/api-breeds";
+		RestTemplate restTemplate = new RestTemplate();
+		String result = restTemplate.getForObject(uri, String.class);
+		return result;
+	}
+
+	@GetMapping(value = "/bengal")
+	public Object[] getBengal() {
 		String url = "https://api.thecatapi.com/v1/images/search?breed_id=beng";
 		ResponseEntity<Object[]> response = new RestTemplate().getForEntity(url, Object[].class);
 
