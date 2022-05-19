@@ -1,0 +1,46 @@
+openapi: 3.0.1
+info:
+  title: API de Gatinhos
+  description: API para mapear informações de gatinhos em geral. 
+  version: 0.0.1
+  termsOfService: http://localhost
+  contact:
+    name: The Cat API
+    email: raissamartinsarq@gmail.com
+  license:
+    name: "Lincença: GPLv3"
+    url: https://www.gnu.org/licenses/gpl-3.0.html
+externalDocs:
+  description: Documentação The Cat API
+  url: http://localhost
+servers:
+- url: http://localhost:8082
+  description: API todas as Raças
+paths:
+  /breeds:
+    get:
+      tags: 
+        - Exemplo
+      summary: Todas as raças de gatos
+      parameters: 
+        - in: query
+          name: mensagem
+          schema: 
+            type: string
+          required: true
+      responses: 
+        '200':
+          description: "Sucesso"
+          content:
+            application/json:
+              examples:
+                Com mensagem:
+                  value: {
+                    "mensagem": "Requisição ok"
+                  }
+
+
+          
+        
+      
+      
