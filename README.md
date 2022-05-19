@@ -63,7 +63,16 @@ Em "consumerAPICategories" é retornado a lista de todos os nomes dos gatos disp
 
 No segundo teste "consumerAPIImagens" é retornado a url da imagem encontrada em: https://api.thecatapi.com/v1/images/search
 
-Para cada teste, foi criado a sua classe "TheCatCategories" e "TheCatImages" passando os parâmetros de cada url. 
+Para cada teste, foi criado a sua classe "TheCatCategories" e "TheCatImages" passando os parâmetros de cada url. Vale ressaltar que existe uma biblioteca chamada lombok que é focada em produtividade e redução do código boilerplate, digo isso porque ele evita a escrita dos métodos getters e setters, além de equals, builder, etc. O intuito é ir implementando essas melhorias conforme formos caminhando na codificação, entretanto, caso você queira implementar no seu código, basta adicionar a seguinte dependência no seu pom.xml:
+
+	<dependency>
+	    <groupId>org.projectlombok</groupId>
+	    <artifactId>lombok</artifactId>
+	    <version>1.16.20</version>
+	    <scope>provided</scope>
+	</dependency>
+	
+É preciso instalar um plugin do lombok para que as IDEs consigam enxergar quais serão os métodos criados pelas anotações do Lombok e nos dar acesso a eles.
 
 Observação: Outra melhoria importante de se falar foi a implementação da dependência DevTools no pom.xml, com ela não preciso mais reiniciar o servidor a cada modificação feita no código, na hora que for salva qualquer alteração o Spring já reinicia sozinho. Outro detalhe é que o escopo dessa dependência será runtime, ou seja, ele só vai rodar durante a execução do projeto. 
 
@@ -129,33 +138,41 @@ Seguindo mais adiante, a ideia é começar a armazenar as informações em uma b
 
 É importante se atentar que se sua máquina for *Windows 10* assim como a minha você precisará abrir o Windows PowerShell como Administrador e realizador os seguintes comandos antes:
 
-*WSL2 e Docker no Windows 10*
+WSL2 e Docker no Windows 10
 
-Passo 1 - (PowerShell Admin): 
+Passo 1: 
 
 dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
 
-Passo 2 - (PowerShell Admin):
+Passo 2:
 
 dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
 
-Passo 3 -
+Passo 3 - REINICIE O COMPUTADOR
 
-REINICIE O COMPUTADOR
-
-Passo 4 - (Download the Linux kernel update package):
+Passo 4 (Download the Linux kernel update package):
 
 https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi
 
-Passo 5 - (PowerShell Admin):
+Passo 5:
 
 wsl --set-default-version 2
 
-Passo 7 - (Instale o docker):
+Passo 7:
 
 Tutorial: https://docs.docker.com/docker-for-windows/install/
 
-![image](https://user-images.githubusercontent.com/86810509/169065013-b3dceac7-717f-4e8f-b30e-a955245ce1b5.png)
-Anexo: Windows PowerShell
+________________________________________________________________________________
 
+Com o docker instalado, é importante entendermos os primeiros e principais comandos que usamos no prompt de comando, listei alguns abaixo:
+
+docker run : Cria um container como uma imagem
+
+docker ps : Exibe os containers que estão em execução 
+
+docker ps –a : Exibe todos os containers, inclusive os que não estão mais em execução.
+
+docker start : Inicializa um container, basta passar as inicias do seu ID.
+
+docker stop : Esse comando para o container, basta passar as iniciais do seu ID. 
 
