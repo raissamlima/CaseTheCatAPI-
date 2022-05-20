@@ -8,7 +8,7 @@ IDE utilizada: Eclipse
 
 Framework: Spring Boot
 
-Para rodar essa aplicação bastar clonar esse repositório e importar na IDE de sua preferência.
+Para rodar essa aplicação basta clonar esse repositório e importar na IDE de sua preferência.
 
 _____________________________________
 
