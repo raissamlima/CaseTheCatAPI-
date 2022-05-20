@@ -130,13 +130,27 @@ No postman realizei a requisição GET onde foi retornado todas as informações
 
 ![image](https://user-images.githubusercontent.com/86810509/168924341-05c3fe02-d370-435e-a8e6-33f4e4cb3ea4.png)
 
+_____________________________________________________________________________________
+
+#Melhorias no código: 
+
+Quando pensamos em um código limpo é importante evitar que algumas informações sejam repetitivas, diante disso, implementei melhorias na classe "ApiApplicationController.java", a primeira delas foi tirar a repetição do código e alguns testes que foram feitos e mostrados e documentados acima. 
+
+Implementei também logo acima da classe o @RequestMapping(/cat-api/) além de agora conseguimos buscar as raças de gatos a partir de um ID específico: 
+
+	@RequestMapping(value = "/{breed_id}")
+		public Object[] getBreed(@PathVariable(value = "breed_id") String breedId) {
+			String url = "https://api.thecatapi.com/v1/images/search?breed_id=" + breedId;
+			ResponseEntity<Object[]> response = new RestTemplate().getForEntity(url, Object[].class);
+	
+			return response.getBody();
+		}  
+	
 Outra etapa de extrema importância é a documentação da nossa API, existem várias ferramentas que ajudam a criar uma boa documentação, as principais são API Blueprint, RAML e Swagger. Nessa projeto, irei utilizar o Swagger. Antes de mais nada, o Swagger é um framework composto por diversas ferramentas que, independente da linguagem, auxilia a descrição, consumo e visualização de serviços de uma API REST. 
 
 Para esse projeto em específico eu escolhi o Swagger Editor, que é uma ferramenta online que permite criar manualmente a documentação da API. Um dos benefícios de usar a YAML, é que o editor possui um conjunto de templates que servem como base para quem não deseja iniciar a documentação do “zero".
+_____________________________________________________________________________________________________________________________________
 
-![image](https://user-images.githubusercontent.com/86810509/169423641-9d673f0a-ca33-48ad-be87-b410f63d275c.png)
-
-_____________________________________________________________________________________
 
 Seguindo mais adiante, a ideia é começar a armazenar as informações em uma base de dados. A tentativa aqui é voltar a usar o Docker, depois de algum tempo sem trabalhar diretamente com banco de dados nas aplicações, comecei pela instalação na minha máquina pessoal, onde lá você pode encontrar a opção ideal para sua máquina (mac, windows ou linux). 
 

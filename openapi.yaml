@@ -14,7 +14,7 @@ externalDocs:
   description: Documentação The Cat API
   url: http://localhost
 servers:
-- url: http://localhost:8082
+- url: http://localhost:8082/cat-api/
   description: API todas as Raças
 paths:
   /breeds:
