@@ -15,7 +15,7 @@ _____________________________________
 
 Desenho Arquitetural Informando como a solução irá funcionar: 
 
-![image](https://user-images.githubusercontent.com/86810509/168922464-cc201262-7ef8-4dfb-8e5d-d3418e5999a9.png)
+![image](https://user-images.githubusercontent.com/86810509/169527164-9c9dca0d-a5ba-48d1-954e-2c699f30776d.png)
 
 Observação: Esse desenho é referente a construção das 4 APIs REST. 
 
