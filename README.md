@@ -132,7 +132,7 @@ No postman realizei a requisição GET onde foi retornado todas as informações
 
 _____________________________________________________________________________________
 
-#Melhorias no código: 
+Melhorias no código: 
 
 Quando pensamos em um código limpo é importante evitar que algumas informações sejam repetitivas, diante disso, implementei melhorias na classe "ApiApplicationController.java", a primeira delas foi tirar a repetição do código e alguns testes que foram feitos e mostrados e documentados acima. 
 
@@ -146,9 +146,18 @@ Implementei também logo acima da classe o @RequestMapping(/cat-api/) além de a
 			return response.getBody();
 		}  
 	
+![image](https://user-images.githubusercontent.com/86810509/169547293-aaba441c-38df-4511-ac67-cf376c758bbb.png)
+
+Imagem acima mostrando como ficou nossa nova coleção no postman onde precisamos passar a requisição http://localhost:8082/cat-api/ + a raça específica que queremos listar.
+
+___________________________________________________________________________________________________________________________________
+
 Outra etapa de extrema importância é a documentação da nossa API, existem várias ferramentas que ajudam a criar uma boa documentação, as principais são API Blueprint, RAML e Swagger. Nessa projeto, irei utilizar o Swagger. Antes de mais nada, o Swagger é um framework composto por diversas ferramentas que, independente da linguagem, auxilia a descrição, consumo e visualização de serviços de uma API REST. 
 
 Para esse projeto em específico eu escolhi o Swagger Editor, que é uma ferramenta online que permite criar manualmente a documentação da API. Um dos benefícios de usar a YAML, é que o editor possui um conjunto de templates que servem como base para quem não deseja iniciar a documentação do “zero".
+
+![image](https://user-images.githubusercontent.com/86810509/169547629-3fbf2b55-6b1d-4409-a514-87b1d0eb213e.png)
+
 _____________________________________________________________________________________________________________________________________
 
 
