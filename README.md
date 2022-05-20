@@ -16,9 +16,7 @@ _____________________________________
 Desenho Arquitetural Informando como a solução irá funcionar: 
 
 ![image](https://user-images.githubusercontent.com/86810509/169527164-9c9dca0d-a5ba-48d1-954e-2c699f30776d.png)
-
-Observação: Esse desenho é referente a construção das 4 APIs REST. 
-
+ 
 Etapa 1: Criação do projeto Spring Boot
 
 Visite o site: https://start.spring.io/ e crie um projeto Java, lá você pode escolher a sua versão e adicionar suas dependências, a princípio adicionei a dependência "Spring Web" (você poderá ver essas dependências no arquivo pom.xml)
